@@ -1,0 +1,53 @@
+GET http://localhost:3100/subscribers
+
+
+###
+
+
+
+
+GET http://localhost:3100/subscribers/62f4bdc388756438c5059cf9
+
+
+
+
+###
+POST http://localhost:3100/subscribers
+Content-Type:application/json
+
+{
+    "name":"Tom Smith",
+    "subscribedToChannel": "Spiders Web!"
+}
+
+###
+POST http://localhost:3100/subscribers
+Content-Type:application/json
+
+{
+    "name": "Sue Silly",
+    "subscribedToChannel": "Top hillbilly"
+}
+
+###
+
+
+POST http://localhost:3100/subscribers
+Content-Type:application/json
+
+{
+    "name":"Tayto Chips",
+    "subscribedToChannel": "Tayto Park!"
+}
+
+###
+DELETE http://localhost:3100/subscribers/62f4bdc388756438c5059cf9
+
+###
+
+PATCH http://localhost:3100/subscribers/62f4bc2417947148623ebbc0
+Content-Type:application/json
+
+{
+    "name":"New name"
+}
